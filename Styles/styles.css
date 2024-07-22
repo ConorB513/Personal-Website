@@ -1,0 +1,254 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #D5F3FE;
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+header{
+    margin-top: 10px;
+    text-align: center;
+    border: 1px black solid ;
+    background-color: #3C99DC;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%
+}
+nav{
+    text-align: center;
+    margin-right: 20px;
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+}
+nav li{
+    padding: 10px;
+    flex: 20%;
+    border: 1px solid black;
+    background-color:#3C99DC;
+    font-size: large;
+    margin: 10px;
+}
+nav li a{
+    text-decoration: none;
+}
+nav li a:link{
+    color: black;
+}
+nav li a:visited{
+    color: black;
+}
+nav li a:hover{
+    color: #0F5298;
+}
+.container{
+    display: flex;
+    padding-top: 10px;
+    padding-bottom:  15px; ;
+    justify-content: center;
+    align-items: center; 
+}
+.headshot{
+    flex: 25%;
+    padding: 20px;
+}
+.headshot img{
+    border: black 1px solid;
+    margin-top: 100px;
+    margin-bottom: 10px;
+}
+.Paragraph{
+    flex: 50%;
+    margin:10px;
+    padding: 10px;
+}
+.Paragraph p{
+    border: 1px solid black;
+    background-color: #66D3FA;
+    padding: 10px;
+    margin: 10px;
+}
+.form{
+    flex: 25%;
+    border: 1px solid black;
+    background-color: #66D3FA;
+    padding: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    height: 325px;
+    margin-top: 100px;
+    margin-left:20px;
+    margin-right: 20px; 
+    margin-bottom: 10px;
+}
+.form legend{
+    font-weight: bold;
+}
+.formRow{
+    display: flex;
+    flex-direction: row;
+}
+.form label{
+    flex: none;
+    display: block;
+    width: 120px;
+}
+.Paragraph h2{
+    background-color: #3C99DC;
+    border: 1px solid black;
+    text-align: center;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+}
+h3{
+    margin-bottom: 0;
+    padding:10px;
+    padding-top: 5px; ;
+}
+h4{
+    margin: 10px;
+}
+footer{
+    text-align: center;
+    border: 1px solid black;
+    background-color:#3C99DC;
+    color:black;
+    clear: both;
+    margin-top: auto;
+}
+.desktop{
+    display: block;
+}
+.tablet{
+    display: none;
+}
+.mobile{
+    display: none;
+}
+footer a{
+   color: black;
+}
+@media only screen and (max-width: 1024px) {
+    .container{
+        display: grid;
+        margin-top: 0;
+    }
+    .Paragraph{
+        grid-row:2/3 ;
+        grid-column: 1/3;
+        margin:25px;
+        margin-top: 10px;
+    }
+    .headshot{
+        margin:0;
+        text-align: center;
+    }
+    .headshot img{
+        grid-row:1/2 ;
+        grid-column: 1/2;
+        margin-top: 0;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0;
+    }
+    .form{
+        grid-row:1/2 ;
+        grid-column: 2/3;
+        margin-top: 0;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0;
+
+    }
+    .tablet{
+        display: block;
+    }
+    h1.tablet {
+        display: block;
+        background-color: #3C99DC;
+        border: 1px solid black;
+        text-align: center;
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 300px;
+    }
+    .desktop{
+        display: none;
+    }
+}
+@media only screen and (max-width: 768px) { 
+    header{
+        display: block;
+        margin-left:auto ;
+        margin-right:auto ;
+        max-width: 400px;
+    }
+    header h1{
+        padding: 5px;
+    }
+    nav{
+        margin: 0;
+    }
+    nav ul{
+        display: block;
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+    }
+    nav li{
+        padding: 5px;
+        margin: 5px;
+    }
+    .container{
+        display: block;
+        padding-top: 0;
+        margin: auto;
+        padding: 30px;
+        padding-top: 0;
+    }
+    .headshot{
+    padding: 10px;
+    }
+   .headshot img{
+    text-align:center;
+    width:auto;
+    display:block;
+    margin:auto;
+    }
+    .Paragraph{
+    margin: 10px;
+    }
+    .form{
+        margin-top: 0;
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+        margin: auto;
+    }
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+    .tablet{
+        display: none;
+    }
+}
+
+/*
+
+Mailto link 
+top padding/margin
+turn skills into to seperate lists 
+*/
