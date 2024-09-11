@@ -246,6 +246,36 @@ footer a{
     }
 }
 
+
+
+
+
+
+
+.flex-item {
+    display: flex;
+    align-items: flex-start; /* Align items at the top */
+    margin-bottom: 20px; /* Add space between sections */
+}
+
+.flex-item .Image {
+    margin-right: 20px; /* Add space between image and text */
+}
+
+.text-content {
+    max-width: 600px; /* Limit the width of the text content */
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 10px;
+}
+
+table td {
+    padding: 8px;
+    border: 1px solid #ddd;
+}
 /*
 
 Mailto link 
